@@ -1,0 +1,13 @@
+.contact-col{
+  position: relative;
+  z-index: 5;
+}
+.inputText{
+  background-color: rgba(249, 245, 245, 0.838);
+}
+.inputText:active, .inputText:focus{
+  border: 2px solid var(--secondary-color) !important;
+  box-shadow: none !important;
+  outline: none !important;
+
+}

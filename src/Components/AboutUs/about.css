@@ -1,0 +1,104 @@
+.about{
+  position: relative;
+  z-index: 5;
+}
+.testimonial-box {
+  margin-top: 1rem;
+
+}
+.testImg{
+  height: 450px;
+  width: 100%;
+  object-fit: cover;
+}
+.testimonialImg{
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  object-fit: cover;
+}
+/* AboutUS separate page*/
+.academyContainer{
+  background-color: #faf1df;
+}
+
+.academy h3{
+  color: var(--primary-color);
+  font-size: 17px;
+}
+.director img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.social-icons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-icons i {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: var(--secondary-color);
+  color: var(--white-color);
+  transition: all 0.3s ease;
+}
+
+.social-icons i:hover {
+  background-color: var(--white-color);
+  color: var(--secondary-color);
+}
+.stayContainer{
+  background-color: var(--accent-color);
+}
+
+.imgchildren{
+  background-color:#fae9c3;
+  border-radius: 50%;
+}
+.stayContainer .fontFam{
+  font-family: "Comic Relief", system-ui;
+}
+
+
+/* Large screens only: position testimonial over the image */
+@media (min-width: 768px) {
+  .testimonial-box {
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 100%;
+    max-width: 380px;
+  }
+}
+@media(min-width:992px){
+  .testimonial-box{
+    top: 15%;
+    left: 50%;
+    max-width: 460px;
+  }
+}
+
+@media(min-width:1200px){
+  .aboutContainer{
+    margin-top: -70px;
+  }
+  .testimonial-box{
+    max-width: 550px;
+  }
+}
+@media(min-width:1400px){
+  .aboutContainer{
+    margin-top: -100px;
+  }
+  .testimonial-box{
+    max-width: 650px;
+  }
+}
