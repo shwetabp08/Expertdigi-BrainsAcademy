@@ -1,21 +1,22 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const CourseCard = ({ title, imgSrc }) => (
   <div className="course-card">
     <img src={imgSrc} alt={title} className="img-fluid" />
     <h2 className="txtBlue">{title}</h2>
-    <a href="#">
+    <Link to="/">
       <button className="plus-icon">
         <i className="fa-solid fa-plus"></i>
       </button>
-    </a>
+    </Link>
   </div>
 );
 
 const Courses = ({ courses }) => {
   
   return (
-    <div className="courses-section">
+    <section className="courses-section">
       <div className="container">
         <div className="row g-4 align-items-center justify-content-center">
           <div className="col-lg-6">
@@ -45,7 +46,7 @@ const Courses = ({ courses }) => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

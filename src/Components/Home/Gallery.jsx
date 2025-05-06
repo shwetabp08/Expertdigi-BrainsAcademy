@@ -13,7 +13,7 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="container my-5">
+    <section className="container my-5">
       <h2 className="text-center mt-5 title">Our Gallery</h2>
       <div className="row gy-4 gx-4 my-4">
         {galleryImages.map((image) => (
@@ -24,7 +24,7 @@ const Gallery = () => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

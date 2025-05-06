@@ -3,7 +3,7 @@ import React from 'react'
 const StayWithUs = () => {
   return (
     <>
-    <div className="stayContainer py-5">
+    <section className="stayContainer py-5">
     <div className="container">
         <div className="row g-4 align-items-center">
           <div className="col-md-7 col-lg-8">
@@ -25,7 +25,7 @@ const StayWithUs = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
      
     </>
   )

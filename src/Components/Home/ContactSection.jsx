@@ -47,7 +47,7 @@ const ContactSection = () => {
   };
 
   return (
-    <div className="container my-5 py-5">
+    <section className="container my-5 py-5">
       <div className="row gy-4 contact-row align-items-center justify-content-center">
         <div className="col-md-6 position-relative text-center contactdiv">
           <div className="row">
@@ -124,7 +124,7 @@ const ContactSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

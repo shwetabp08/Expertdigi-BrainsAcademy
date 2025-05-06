@@ -1,19 +1,17 @@
 import React from 'react'
-import Navbar from '../Navbar'
 import Cloud from '../cloud'
-import ContactForm from './ContactForm'
-import './contact.css'
+import Navbar from '../Navbar'
 
-const ContactUs = () => {
+const SignUp = () => {
   return (
     <>
-      <section className="bannerPage position-relative">
+       <section className="bannerPage position-relative">
         <header><Navbar/></header>
         <div className="container py-5">
           <div className="row my-5 text-center align-items-center justify-content-center">
             <div className="my-lg-2">
             <h1 className="heading text-black mb-3">
-            Get In  <span className="underline-text">Touch!
+             <span className="underline-text">Sign Up !
                 <svg viewBox="0 0 200 20" xmlns="http://www.w3.org/2000/svg" className="underline-svg">
                   <path d="M5 15 Q 10 0, 120 5 T 195 10" stroke="var(--yellow-color)" strokeWidth="7" fill="transparent" />
                 </svg>
@@ -32,9 +30,11 @@ const ContactUs = () => {
         <Cloud/>
         </div>
     </section>
-    <ContactForm/>
+    <section className='my-5'>
+
+    </section>
     </>
   )
 }
 
-export default ContactUs
+export default SignUp

@@ -12,18 +12,20 @@ import Cloud from '../cloud'
 const Home = ({courses}) => {
   return (
     <>
-      <div className="landing-page position-relative">
+      <section className="landing-page position-relative">
         <img
-          src="/Images/lines.png"
+          src="Images/lines.png"
           alt="lines"
           className="linesImg d-none d-xl-block"
         />
-        <Navbar/>
+       <header>
+       <Navbar/>
+       </header>
         <HeroSection/>
         <div>
         <Cloud/>
         </div>
-      </div>
+      </section>
 
       <About/>
       <Enroll/>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const HeroSection = () => {
   return (
@@ -18,11 +19,11 @@ const HeroSection = () => {
 
           {/* Buttons */}
           <div className="d-flex flex-column flex-md-row align-items-center justify-content-center my-4 my-xl-5">
-            <a href="#" className="demobtn fw-bold rounded-5 mb-3 mb-md-0 me-xl-3">
+            <Link to="/" className="demobtn fw-bold rounded-5 mb-3 mb-md-0 me-xl-3">
               Book a Demo Class <span className="ms-3"><i className="fa-solid fa-arrow-right p-1 px-2 rounded-5"></i></span>
               
              
-            </a>
+            </Link>
             <div className="d-flex h-100 align-items-center ">
             <i className="fa-solid fa-phone-volume phone-icon fa-2x mx-3"></i>
               <div className="text-start txtcontact">
@@ -35,7 +36,7 @@ const HeroSection = () => {
 
         {/* Right Image Section */}
         <div className="col-md-4 text-center mt-5 mt-lg-0">
-          <img src="/Images/hero-boy.png" alt="Boy" className="img-fluid boy" />
+          <img src="Images/hero-boy.png" alt="Boy" className="img-fluid boy" />
         </div>
       </div>
     </section>

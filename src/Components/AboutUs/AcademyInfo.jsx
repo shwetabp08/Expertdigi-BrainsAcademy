@@ -4,7 +4,7 @@ import React from "react";
 const AcademyInfo = () => {
   return (
     <>
-    <div className="academyContainer">
+    <section className="academyContainer">
     <div className="container my-5">
         <div className="row g-4 align-items-center">
           <div className="col-md-6 d-flex align-items-center justify-content-evenly">
@@ -47,7 +47,7 @@ const AcademyInfo = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
       
     </>
   );

@@ -3,12 +3,12 @@ import React from 'react'
 const About = () => {
   return (
     <>
-      <div className="container my-5">
+      <section className="container my-5">
         <div className="row py-3 pb-lg-5 gy-4 align-items-center justify-content-center">
           {/* Left Image */}
           <div className="col-md-6 col-xl-5 text-center mb-4 mb-md-0">
             <img
-              src="/Images/about.png"
+              src="Images/about.png"
               alt="Kids Learning"
               className="img-fluid rounded-image"
             />
@@ -33,7 +33,7 @@ const About = () => {
             <button className="btnBrown mt-4 rounded-5">Know More</button>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

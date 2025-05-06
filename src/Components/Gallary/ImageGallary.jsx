@@ -11,7 +11,7 @@ const images = [
 
 const ImageGallery = () => {
   return (
-    <div className='container'>
+    <section className='container'>
     <div className="gallery-grid ">
       {images.map((src, index) => (
         <div key={index} className={`gallery-item item-${index + 1}`}>
@@ -19,7 +19,7 @@ const ImageGallery = () => {
         </div>
       ))}
     </div>
-    </div>
+    </section>
   );
 };
 

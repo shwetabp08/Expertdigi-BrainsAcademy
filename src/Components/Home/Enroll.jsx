@@ -1,7 +1,7 @@
 import React from "react";
 const Enroll = () => {
   return (
-    <div className="container my-5">
+    <section className="container my-5">
       <div className="row align-items-center py-3">
 
         {/* Left Section */}
@@ -51,7 +51,7 @@ const Enroll = () => {
         </div>
 
       </div>
-    </div>
+    </section>
   );
 };
 

@@ -26,8 +26,8 @@ const AboutUs = ({courses}) => {
   ];
   return (
     <>
-      <div className="bannerPage position-relative">
-        <Navbar/>
+      <section className="bannerPage position-relative">
+        <header><Navbar/></header>
         <div className="container py-5">
           <div className="row my-5 text-center align-items-center justify-content-center">
             <div className="my-lg-2">
@@ -50,8 +50,8 @@ const AboutUs = ({courses}) => {
         <div>
         <Cloud/>
         </div>
-    </div>
-      <div className="container aboutContainer mb-5">
+    </section>
+      <section className="container aboutContainer mb-5">
         <div className="row gy-4 align-items-center justify-content-center text-center">
           <div className="col-md-6">
             <div>
@@ -74,7 +74,7 @@ const AboutUs = ({courses}) => {
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <Courses courses={courses}/>
       <AcademyInfo/>
       <Testimonial testimonials={testimonials}/>

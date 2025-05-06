@@ -8,6 +8,8 @@ import Program from "./Components/Programs/Program";
 import Gallery from "./Components/Gallary/Gallery";
 import Home from "./Components/Home/Home";
 import ContactUs from "./Components/Contact/ContactUs";
+import Login from "./Components/LoginAndSignUp/Login";
+import SignUp from "./Components/LoginAndSignUp/SignUp";
 
 function App() {
   const courses = [
@@ -37,6 +39,8 @@ function App() {
         <Route path="/programs" element={<Program/>} />
         <Route path="/gallery" element={<Gallery/>} />
         <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/login" element={<Login/>} />
+        <Route path="/signup" element={<SignUp/>} />
       </Routes>
 
       <FooterSection /> {/* Footer will be common across all pages */}

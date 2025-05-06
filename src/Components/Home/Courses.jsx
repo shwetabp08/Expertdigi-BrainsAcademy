@@ -1,13 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 const CourseCard = ({ title, imgSrc }) => (
   <div className="course-card">
     <img src={imgSrc} alt={title} className="img-fluid" />
     <h2 className="txtBlue">{title}</h2>
-    <a href="#">
+    <Link to="/">
       <button className="plus-icon">
         <i className="fa-solid fa-plus"></i>
       </button>
-    </a>
+    </Link>
   </div>
 );
 
@@ -15,13 +16,13 @@ const CourseCard = ({ title, imgSrc }) => (
 const Courses = ({ courses }) => {  // <-- destructure 'courses' from props
  
   return (
-    <div className="courses-section">
+    <section className="courses-section">
       <div className="container my-5">
         <div className="row g-5 align-items-center">
           <div className="col-lg-6">
             <h1 className="mb-4 text-center title fw-bold">Courses We Offer</h1>
             <img
-              src="/Images/courses.png"
+              src="Images/courses.png"
               alt="Kids Riding Pencil"
               className="img-fluid"
             />
@@ -37,7 +38,7 @@ const Courses = ({ courses }) => {  // <-- destructure 'courses' from props
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

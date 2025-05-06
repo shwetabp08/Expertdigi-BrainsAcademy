@@ -33,7 +33,7 @@ a{
   color: var(--secondary-color) !important;
 }
 .navbar {
-  transition: background-color 0.s, box-shadow 0.3s;
+  transition: background-color 1s, box-shadow 0.3s;
 }
 .navbar-collapse {
   background-color: var(--white-color);
@@ -42,34 +42,54 @@ a{
   background-color: var(--white-color);  /* White background after scrolling */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add a shadow to the navbar */
 }
+
 /* login button */
-.btnLogin{
-  color: var(--white-color);
-  font-size: 16.5px;
+.loginLink {
+  color: var(--white-color) ;
+  text-decoration: none;
+  transition: color 0.7s ease-in-out;
+}
+
+.loginLink:hover{
+  color: var(--secondary-color) !important;
+}
+
+.loginLink.active {
+  color: var(--yellow-color) ;
+}
+
+.btnLogin {
   background-color: var(--primary-color);
   border: 3px solid var(--primary-color);
+  font-size: 16.5px;
   transition: all 1s ease-in-out;
 }
-.btnLogin span i{
-color: var(--primary-color);
-background-color: var(--white-color);
-transition: all 1s ease-in-out;
+
+.btnLogin span{
+color: var(--white-color);
+transition: all .5s ease-in-out;
+}
+.btnLogin:hover span{
+  color: var(--secondary-color) !important;
 }
 .btnLogin:hover{
-  color: var(--secondary-color);
   background-color: var(--white-color);
 
 }
+.btnLogin:hover .loginLink{
+  color: var(--primary-color) ;
+}
 .btnLogin:hover.btnLogin span i{
   color: var(--white-color);
-  background-color: var(--primary-color);
+  background-color: var(--primary-color) !important;
+}
+.btnLogin span i{
+  transition: all .5s ease-in-out;
+  color: var(--primary-color);
+  background-color: var(--white-color) ;
+  border: 3px solid var(--primary-color);
 }
 
-/* 
-.btn-primary {
-  background-color: var(--primary-color);
-  border: none;
-} */
 
 /* common banner heading and subheading for all pages */
 .heading{
@@ -156,27 +176,6 @@ transition: all 1s ease-in-out;
   flex-wrap: wrap;
   text-align: center; 
 }
-
-/* Left Image */
-/* .left-side img {
-  max-width: 400px;
-  width: 100%;
-  height: auto;
-}
-
-/* Right Side Content */
-/* .right-side {
-  flex: 1;
-  min-width: 300px;
-} */
-
-/* .right-side h1 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  font-weight: bold;
-  text-align: center; 
-}  */
-
 
 /* common Course Card for about and home page*/
 .course-card {
