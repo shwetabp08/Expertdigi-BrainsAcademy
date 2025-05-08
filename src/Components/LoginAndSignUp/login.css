@@ -1,0 +1,235 @@
+.login-wrapper {
+  position: relative;
+  min-height: 120vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+/* Background Decorative Shapes */
+.shape {
+  position: absolute;
+  width: 70%;
+  height: 25%;
+  background-color: var(--primary-color);
+  background-image:
+    radial-gradient(circle, rgb(89, 108, 202) 2px, transparent 1px);
+  background-size: 20px 20px;
+  z-index: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+  border-bottom-left-radius: 100%;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  border-top-right-radius: 100%;
+}
+
+/* Card Container */
+.card-container {
+  position: relative;
+  z-index: 1;
+  background: var(--white-color);
+  border-radius: 16px;
+  box-shadow: 0 0px 15px var(--grey-color);
+  width: 100%;
+  overflow: hidden;
+  padding: 24px;
+}
+
+/* Image */
+.image-container img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+
+/* Form */
+.login-form {
+  text-align: center;
+}
+
+.form-subtext {
+  font-size: 13px;
+  color: var(--grey-color);
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+  text-align: left;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--grey-color);
+  font-size: 14px;
+}
+
+input.error,
+select.error {
+  border-color: red;
+}
+
+.error-msg {
+  font-size: 12px;
+  color: red;
+  margin-top: 4px;
+  display: block;
+}
+
+
+.form-footer {
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* login.css */
+
+/* MUI-style input fields */
+.input-field {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 12px 12px 12px 36px;
+  border: none;
+  border-bottom: 1px solid var(--grey-color);
+  background: transparent;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.5s ease-in-out;
+}
+
+.input-field input:focus,
+.input-field select:focus {
+  border: 1px solid var(--secondary-color) !important;
+  border-radius: 4px;
+  padding-left: 36px;
+}
+
+.input-field label {
+  position: absolute;
+  top: 12px;
+  left: 36px;
+  color: var(--grey-color);
+  font-size: 1rem;
+  background: var(--white-color);
+  padding: 0 4px;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+
+/* For focused input or valid select field, move label */
+.input-field input:focus ~ label,
+.input-field input:not(:placeholder-shown) ~ label,
+.input-field select:focus ~ label,
+.input-field select:valid ~ label {
+  top: -12px;
+  left: 10px;
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+  background: var(--white-color);
+}
+
+/* Border for focused input/select (applies all sides) */
+.input-field input:focus,
+.input-field select:focus {
+  border: 1px solid var(--secondary-color) !important;
+  padding-left: 36px;
+  border-radius: 4px;
+}
+
+/* Invalid input */
+.input-field input.invalid,
+.input-field select.invalid {
+  border-color: red;
+}
+
+.input-field .error {
+  font-size: 0.75rem;
+  color: red;
+  margin-top: 0.2rem;
+}
+
+/* Icon inside input */
+.input-field span.icon {
+  position: absolute;
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: var(--grey-color);
+  font-size: 1rem;
+}
+
+
+/* Dropdown (Select) specific styling */
+.input-field select {
+  padding: 12px 12px 12px 36px;
+  border-bottom: 1px solid var(--grey-color);
+  transition: all 0.5s ease-in-out;
+}
+
+.input-field select:focus {
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  padding-left: 36px;
+}
+
+/* For the icon inside select */
+.input-field select + span.icon {
+  top: 50%;
+  left: 8px;
+  transform: translateY(-50%);
+  color: var(--grey-color);
+  font-size: 1rem;
+}
+
+
+
+/* Responsive */
+@media (min-width: 768px) {
+  .shape {
+    width: 45%;
+    height: 35%;
+  }
+  .login-container{
+    height: 100vh;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 32px;
+    height: 80vh;
+  }
+
+  .image-container {
+    flex: 1;
+  }
+
+  .login-form {
+    flex: 1;
+    text-align: left;
+  }
+
+  
+}
+@media(min-width:992px){
+  .card-container{
+    gap: 40px;
+  }
+}
