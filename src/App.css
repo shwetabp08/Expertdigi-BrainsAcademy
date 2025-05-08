@@ -106,7 +106,9 @@ transition: all .5s ease-in-out;
 .txtBlue{
   color: var(--primary-color);
 }
-
+.txtYellow{
+color: var(--yellow-color);
+}
 /* cloud svg for banner */
 .cloud-svg {
   position: absolute;
@@ -253,7 +255,7 @@ input:active,input:focus,textarea:active,textarea:focus{
 .footerLine{
 position: relative;
 height: 2px;
-width: 70%;
+width: 35%;
 background-color: var(--white-color);
 }
 
@@ -342,6 +344,9 @@ background-color: var(--white-color);
   .cloud-svg {
     bottom: 0;
   }
+  .footerLine{
+    width: 40%;
+  }
 }
 
 @media(min-width:992px){
@@ -366,8 +371,6 @@ background-color: var(--white-color);
   .title {
     font-size: 48.6px;
   }
-  
- 
   .contact-row{
     gap: 15px;
   }
@@ -376,6 +379,9 @@ background-color: var(--white-color);
   }
   .cloud-svg{
     bottom: -10px;
+  }
+  .footerLine{
+    width: 65%;
   }
 }
 @media(min-width:1200px){

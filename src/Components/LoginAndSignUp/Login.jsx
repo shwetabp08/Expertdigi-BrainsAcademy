@@ -154,7 +154,7 @@ const Login = () => {
 
                   <p className="form-footer text-center">
                     Don't have an account?{" "}
-                    <span className="ms-2 txtBrown fw-bold">Sign Up</span>
+                    <Link to="/signup" className="ms-2 txtBrown fw-bold">Sign Up</Link>
                   </p>
                 </form>
               </div>

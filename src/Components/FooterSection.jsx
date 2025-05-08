@@ -1,6 +1,12 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 const Footer = () => {
+  const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    setCurrentYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="footer-section py-5 text-white">
       <div className="container">
@@ -20,7 +26,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-2">
             <h6 className="section-heading">Pages</h6>
             <div className='footerLine'></div>
-            <ul className="list-unstyled mt-md-4">
+            <ul className="list-unstyled mt-3 mt-md-4">
               <li>Refund Policy</li>
               <li>Careers</li>
               <li>Privacy & Policy</li>
@@ -31,7 +37,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-4">
             <h6 className="section-heading">Contact Info</h6>
             <div className='footerLine'></div>
-            <ul className="list-unstyled mt-md-4">
+            <ul className="list-unstyled mt-3 mt-md-4">
   <li className="d-flex align-items-start mb-2">
     <i className="fas fa-map-marker-alt me-2 mt-1"></i>
     <span className='ms-2 pe-3'>
@@ -53,7 +59,7 @@ const Footer = () => {
           <div className="col-12 col-md-6 col-lg-3">
             <h6 className="section-heading">Our Newsletter</h6>
             <div className='footerLine'></div>
-            <p className='mt-md-4'>Subscribe our newsletter to get our latest update</p>
+            <p className='mt-3 mt-md-4'>Subscribe our newsletter to get our latest update</p>
             <div className="newsletter d-flex">
               <input
                 type="email"
@@ -71,7 +77,7 @@ const Footer = () => {
         <hr className="my-4 border-light" />
 
         <div className="text-center small">
-          Ascen © 2025. All Rights Reserved |
+          <span className="fw-bold txtYellow">Brains Academy</span> © {currentYear}{" "} All Rights Reserved |
           <span className="ms-2">Terms & Condition</span> |
           <span className="ms-2">Privacy Policy</span> |
           <span className="ms-2">Contact Us</span>

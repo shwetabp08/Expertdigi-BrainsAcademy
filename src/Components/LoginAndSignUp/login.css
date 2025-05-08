@@ -204,7 +204,7 @@ select.error {
 @media (min-width: 768px) {
   .shape {
     width: 45%;
-    height: 35%;
+    height: 30%;
   }
   .login-container{
     height: 100vh;
@@ -213,8 +213,8 @@ select.error {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 32px;
-    height: 80vh;
+    /* padding: 32px; */
+    height: 90vh;
   }
 
   .image-container {
@@ -231,5 +231,12 @@ select.error {
 @media(min-width:992px){
   .card-container{
     gap: 40px;
+    /* height: 85vh; */
+  }
+  
+}
+@media(min-width:1400px){
+  .card-container{
+    height: 85vh;
   }
 }
