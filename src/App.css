@@ -316,7 +316,7 @@ background-color: var(--white-color);
 }
 
 
-/* banner style for about, contact, gallery */
+/* banner style for about, contact, gallery, login, sign up */
 .bannerPage{
   background-image: url(Images/page-banner.jpg);
   width: 100%;
