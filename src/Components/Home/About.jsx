@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
@@ -25,17 +26,16 @@ const About = () => {
               </span>
             </h2>
             <p className="description my-3 my-lg-4">
-              Abacus is a Brain Development Program. It is an amazing technique
-              that assists students to do basic arithmetic calculations accurately
-              and quickly. This method activates right as well as left side of the
-              brain and helps students in achieving very high calculation speeds.
+              Brains Academy offers engaging learning programs like Abacus and Vedic Maths for children aged 5 to 14. Our goal is to build strong math skills, sharper minds, and higher confidence through fun and interactive training. With every class, we help kids unlock their full potential and enjoy learning.
             </p>
-            <button className="btnBrown mt-4 rounded-5">Know More</button>
+           <div className='mt-5'>
+           <Link to="/about" className="btnBrown rounded-5">Know More</Link>
+           </div>
           </div>
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default About
+export default About;

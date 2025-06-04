@@ -1,0 +1,174 @@
+.gallery-grid {
+  position: relative;
+  z-index: 5;
+  display: grid;
+  /* padding: 16px; */
+  grid-template-columns: 1fr; 
+  column-gap: 12px; 
+  row-gap: 12px;  
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+.gallary-section {
+  position: relative;
+  background-image: url(Images/cta-background.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+.gallary-row {
+  height: 100%;
+}
+
+.content-wrapper h1 {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.text-orange {
+  color: #f97316;
+  font-weight: bold;
+}
+
+.text-highlight {
+  color: var(--primary-color);
+}
+
+.content-wrapper p {
+  color: var(--black-color);
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+/* Position images at bottom of their columns */
+.left-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 280px;
+}
+.right-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 280px;
+}
+/* spinner */
+.spinner-container {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.spinner {
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3734a9;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.invisible-grid {
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+@media (min-width: 768px) {
+  .content-wrapper h1 {
+    font-size: 2.5rem;
+  }
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: -30px;
+  }
+
+  .gallery-item img {
+    height: 300px !important;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 350px;
+    grid-auto-flow: dense;
+    grid-template-areas:
+      "one one two three"
+      "four five six six"
+      "seven seven eight nine"
+      "ten eleven twelve twelve"
+      "thirteen thirteen fourteen fifteen"
+      "sixteen seventeen eighteen eighteen"
+      "nineteen nineteen twenty twentyOne"
+      "twentyTwo twentyThree twentyFour twentyFour"
+      "twentyFive twentySix twentySeven twentyEight";
+      
+  }
+
+  .item-1  { grid-area: one; }
+  .item-2  { grid-area: two; }
+  .item-3  { grid-area: three; }
+  .item-4  { grid-area: four; }
+  .item-5  { grid-area: five; }
+  .item-6  { grid-area: six; }
+  .item-7  { grid-area: seven; }
+  .item-8  { grid-area: eight; }
+  .item-9  { grid-area: nine; }
+  .item-10 { grid-area: ten; }
+  .item-11 { grid-area: eleven; }
+  .item-12 { grid-area: twelve; }
+  .item-13 { grid-area: thirteen; }
+  .item-14 { grid-area: fourteen; }
+  .item-15 { grid-area: fifteen; }
+  .item-16 { grid-area: sixteen; }
+  .item-17 { grid-area: seventeen; }
+  .item-18 { grid-area: eighteen; }
+  .item-19 { grid-area: nineteen; }
+  .item-20 { grid-area: twenty; }
+  .item-21 { grid-area: twentyOne; }
+  .item-22 { grid-area: twentyTwo; }
+  .item-23 { grid-area: twentyThree; }
+  .item-24 { grid-area: twentyFour; }
+  .item-25 { grid-area: twentyFive; }
+  .item-26 { grid-area: twentySix; }
+  .item-27 { grid-area: twentySeven; }
+  .item-28 { grid-area: twentyEight; }
+
+  .gallery-item img {
+    height: 100% !important;
+  }
+  /* .gallery-grid {
+    row-gap: 65px;
+  } */
+
+  .left-image {
+    width: 350px;
+  }
+
+  .right-image {
+    width: 350px;
+  }
+}
+
+/* Extra large screens: scale up side images */
+@media (min-width: 1400px) {
+  
+}

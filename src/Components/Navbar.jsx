@@ -28,7 +28,7 @@ const Navbar = () => {
       <div className="container py-0 my-0">
         <a className="navbar-brand d-flex align-items-center" href="#">
           <img
-            src="/Images/logo1.png"
+            src="/Images/logoNav.png"
             alt="Logo"
             height="60"
             width="180px"

@@ -2,6 +2,10 @@
   position: relative;
   z-index: 5;
 }
+.aboutPosition{
+  position: relative;
+  z-index: 2;
+}
 .testimonial-box {
   margin-top: 1rem;
 
@@ -16,6 +20,7 @@
   height: 70px;
   border-radius: 70px;
   object-fit: cover;
+  object-position: top;
 }
 /* AboutUS separate page*/
 .academyContainer{
@@ -24,13 +29,14 @@
 
 .academy h3{
   color: var(--primary-color);
-  font-size: 17px;
+  font-size: 20px;
 }
 .director img{
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
 }
 .social-icons {
   display: flex;

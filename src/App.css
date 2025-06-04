@@ -240,7 +240,7 @@ input:active,input:focus,textarea:active,textarea:focus{
 .footerlogo{
   width: 180px;
   height: 70px;
-  object-fit: cover;
+  object-fit: contain;
 }
 .footer-section {
   background-color: var(--footer-color);
@@ -318,7 +318,7 @@ background-color: var(--white-color);
 
 /* banner style for about, contact, gallery, login, sign up */
 .bannerPage{
-  background-image: url(Images/page-banner.jpg);
+  background-image: url(/Images/page-banner.jpg);
   width: 100%;
   height: 70vh;
   background-size: cover;
@@ -403,5 +403,6 @@ background-color: var(--white-color);
   .section-heading::before {
     right: 160px;
   }
+  
   
 }

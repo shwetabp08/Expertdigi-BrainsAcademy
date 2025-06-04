@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const [currentYear, setCurrentYear] = useState(new Date().getFullYear());
@@ -8,14 +9,16 @@ const Footer = () => {
   }, []);
 
   return (
-    <footer className="footer-section py-5 text-white">
+    <footer className="footer-section py-4 text-white">
       <div className="container">
-        <div className="row gy-4">
+        <div className="row gy-4 align-items-center justify-content-center">
 
           <div className="col-12 col-md-6 col-lg-3">
-            <img src="Images/logo.png" alt="Brains Academy" className="mb-3 footerlogo" />
-            <p>Phasellus ultricies aliquam volutpat ullamcorper laoreet neque, a lacinia curabitur lacinia mollis</p>
-            <div className="social-icons mt-3">
+            <img src="Images/Mainlogo.png" alt="Brains Academy" className="mb-3 footerlogo" />
+            <p className='pe-lg-5 my-3 mb-4'>
+              Brains Academy is an ISO-certified institute offering Abacus, Vedic Maths, and Olympiad programs for children. We focus on brain development, speed, and logical thinking in a fun and engaging way.
+            </p>
+            <div className="social-icons ">
   <i className="fab fa-facebook-f"></i>
   <i className="fab fa-x-twitter"></i>
   <i className="fab fa-linkedin-in"></i>
@@ -41,16 +44,16 @@ const Footer = () => {
   <li className="d-flex align-items-start mb-2">
     <i className="fas fa-map-marker-alt me-2 mt-1"></i>
     <span className='ms-2 pe-3'>
-      Office no 130 Snehagan Residency Wing A-B Opposite Euro school Wakad Pune 411057
+      <Link to="" className='text-white'>Office no 130 Snehagan Residency Wing A-B Opposite Euro school Wakad Pune 411057</Link>
     </span>
   </li>
   <li className="d-flex align-items-start mb-2">
     <i className="fas fa-envelope me-2 mt-1"></i>
-    <span className='ms-2'>brainsacademy11@gmail.com</span>
+    <span className='ms-2'><Link to="" className="text-white">brainsacademy11@gmail.com</Link></span>
   </li>
   <li className="d-flex align-items-start">
     <i className="fas fa-phone me-2 mt-1"></i>
-    <span className='ms-2'>+88 457 845 695</span>
+    <span className='ms-2'><Link to="" className="text-white">+91 9270178355</Link></span>
   </li>
 </ul>
 
@@ -77,10 +80,10 @@ const Footer = () => {
         <hr className="my-4 border-light" />
 
         <div className="text-center small">
-          <span className="fw-bold txtYellow">Brains Academy</span> © {currentYear}{" "} All Rights Reserved |
-          <span className="ms-2">Terms & Condition</span> |
-          <span className="ms-2">Privacy Policy</span> |
-          <span className="ms-2">Contact Us</span>
+          <span className="fw-bold txtYellow">Brains Academy</span> © {currentYear}{" "} All Rights Reserved.
+          <span className="ms-2"><Link to="" className="text-white">Terms & Condition</Link></span> |
+          <span className="ms-2"><Link to="" className="text-white">Privacy Policy</Link></span> |
+          <span className="ms-2"><Link to="" className="text-white">Contact Us</Link></span>
         </div>
       </div>
     </footer>

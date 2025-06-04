@@ -11,18 +11,17 @@ const AboutUs = ({courses}) => {
   const testimonials = [
     {
       name: "Alex Smith",
-      role: "Marketing Manager",
+      role: "Parent of vedic math Student",
       image: "Images/man.png",
       quote:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. At quidem sed quis perferendis ad ipsum earum repellendus harum assumenda neque?",
+        "My son absolutely loves his vedic math class. he's faster in math and more confident than ever!",
     },
     {
-      name: "Rose Doe",
-      role: "Product Designer",
+      name: "Priya Kulkarni",
+      role: "Parent of Abacus Student",
       image: "Images/woman.png",
-      quote:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure maiores vitae iste eligendi doloremque tempora?",
-    },
+      quote: "My daughter absolutely loves her Abacus class. She's faster in math and more confident than ever!"
+    }
   ];
   return (
     <>
@@ -40,7 +39,7 @@ const AboutUs = ({courses}) => {
             </h1>
            <div className='d-flex justify-content-center'>
            <p className="col-md-9 col-lg-8 col-xl-7 col-xxl-6 subheading fw-semibold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magnam beatae repellendus impedit adipisci, tenetur id aut odit culpa sit ad.
+           "Brains Academy is where curiosity meets creativity! We specialize in empowering kids aged 5 to 14 with programs like Abacus, Vedic Maths, Little Math Olympiad, and more—all designed to sharpen focus, logic, and academic skills."
             </p>
            </div>
             </div>
@@ -59,16 +58,13 @@ const AboutUs = ({courses}) => {
             </div>
           </div>
           <div className="col-md-6">
-            <div>
+            <div className="aboutPosition">
               <h2 className="title fw-bold">About Us Page</h2>
-              <h3 className="fs-2 txtBlue text-capitalize">
+              <h3 className="fs-2 txtBlue fw-bold text-capitalize">
                 Invest in education invest in the future
               </h3>
-              <p className="my-3 my-lg-5 description">
-                Lorem ipsum dolor sit amet consectetur adipiscing elit platea
-                pharetra, nostra mattis hendrerit proin mollis pretium facilisi
-                in, ligula volutpat lobortis molestie sed per accumsan conubia.
-                Sed dis loren ipsum dummy text
+              <p className="my-3 mt-lg-4 mb-lg-5 description">
+              Brains Academy is a leading ISO 9001:2015 certified institute offering innovative programs like Abacus, Vedic Maths, Word Problems, and Little Math Olympiad. Designed for ages 5–14, our courses foster focus, logical reasoning, and academic excellence in a fun, engaging way.
               </p>
               <button className="btnBrown rounded-5">Enroll Know</button>
             </div>

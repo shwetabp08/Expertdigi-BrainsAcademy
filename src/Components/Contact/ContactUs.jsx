@@ -21,8 +21,9 @@ const ContactUs = () => {
             </h1>
            <div className='d-flex justify-content-center'>
            <p className="col-md-9 col-lg-8 col-xl-7 col-xxl-6 subheading fw-semibold">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, magnam beatae repellendus impedit adipisci.
-            </p>
+                  Have questions about our Abacus or Vedic Maths programs? Looking to partner with us or join our franchise network? 
+                  Reach out — we’d love to connect with you!
+                </p>
            </div>
             </div>
 

@@ -13,9 +13,9 @@ const StayWithUs = () => {
                 The path to success starts with <br /> education
               </h2>
               <p className="description">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Neque natus harum dolorum fugiat, est debitis?
+              Join Brains Academy’s journey toward academic excellence. With engaging programs and certified mentors, we shape confident, curious minds prepared for lifelong success.
               </p>
-              <button className='btnBrown rounded-5'>Read More</button>
+              <button className='btnBrown rounded-5 mt-3'>Read More</button>
             </div>
           </div>
           <div className="col-md-5 col-lg-4">

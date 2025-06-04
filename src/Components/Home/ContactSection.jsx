@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react';
+import bigImg from '/Images/gallery-01.jpg';
+import smallImg from '/Images/gallery-03.jpg'
 
 const ContactSection = () => {
   const [projectCount, setProjectCount] = useState(0);
@@ -51,14 +53,14 @@ const ContactSection = () => {
       <div className="row gy-4 contact-row align-items-center justify-content-center">
         <div className="col-md-6 position-relative text-center contactdiv">
           <div className="row">
-            <div className="col-md-4">
-            <img src="Images/kids1.png" alt="Child" className="position-absolute child-img img-thumbnail" />
+            <div className="col-md-2 col-xl-3">
+            <img src={smallImg} alt="Child" className="position-absolute child-img img-thumbnail" />
           <div className="project-badge position-absolute">
             {Math.floor(projectCount / 1000)}k+<br />Project Completed
           </div>
             </div>
-            <div className="col-md-8">
-            <img src="Images/kids.png" alt="Child" className="img-fluid rounded main-img" />
+            <div className="col-md-10 col-xl-9">
+            <img src={bigImg} alt="parent" className="img-fluid rounded main-img" />
             </div>
           </div>
           

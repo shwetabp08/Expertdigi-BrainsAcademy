@@ -13,11 +13,13 @@ const Testimonial = ({testimonials}) => {
           <div className="col-12 col-md-8">
             <p className="fs-5 txtBlue fw-semibold">Clients Testimonial</p>
             <h2 className="fw-bold">
-              Unlocking The Power Of <br />Wonderworks Child
+            Unlocking the Potential of <br /> Every Young Mind
+
             </h2>
           </div>
           <div className="col-12 col-md-4 description text-muted">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam facere deserunt aspernatur iste eaque.
+          Discover what parents and students have to say about our programs. Real stories of confidence, faster math skills, and joyful learning experiences!
+
           </div>
         </div>
 
